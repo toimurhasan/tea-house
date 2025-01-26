@@ -30,8 +30,8 @@
       };
     </script>
   </head>
-  <body class="font-manrope max-w-sm md:max-w-3xl sm:max-w-lg lg:max-w-5xl mx-auto">
-    <header>
+  <body class="font-manrope">
+    <header class="max-w-sm md:max-w-3xl sm:max-w-lg lg:max-w-5xl mx-auto">
       <!-- banner -->
       <section class="px-3 sm:p-0 flex items-center flex-col-reverse md:flex-row">
         <div
@@ -69,7 +69,7 @@
         </div>
       </section>
     </header>
-    <main>
+    <main class="max-w-sm md:max-w-3xl sm:max-w-lg lg:max-w-5xl mx-auto">
       <!-- featured products -->
       <section class="py-16 lg:pt-24 pb-0">
         <div class="text-center max-w-screen-lg mb-8">
@@ -169,7 +169,7 @@
       <!-- review section -->
       <section class="mb-24">
         <div
-          class="bg-gradient-to-r from-orange-400 to-red-600 rounded-xl grid md:grid-cols-2 gap-16 md:gap-24 items-center py-10 px-8 md:py-20 md:px-16"
+          class="bg-gradient-to-r from-orange-400 to-red-600 rounded-xl grid md:grid-cols-2 gap-16 md:gap-24 items-center py-10 px-8 md:py-20 md:px-16 bg-no-repeat bg-left-bottom"
         >
           <div class="text-white space-y-4">
             <h1 class="text-3xl font-bold">Meet Our Super Clients</h1>
@@ -236,9 +236,9 @@
           suffered alteration in some form, by injected humour, or randomised words which don't look
           even slightly believable.
         </p>
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <div class="space-y-3 border border-gray-300 p-5 rounded-xl">
-            <img src="images/news-1.png" alt="news-1" />
+            <img class="w-full" src="images/news-1.png" alt="news-1" />
             <p class="text-sm text-gray-800">Feb 05, 2027</p>
             <h3 class="text-2xl font-extrabold">Collecting 8 points for discount</h3>
             <p class="text-sm text-gray-800">
@@ -247,7 +247,7 @@
             <div><a href="#" class="font-bold">Learn More</a></div>
           </div>
           <div class="space-y-3 border border-gray-300 p-5 rounded-xl">
-            <img src="images/news-2.png" alt="news-1" />
+            <img class="w-full" src="images/news-2.png" alt="news-1" />
             <p class="text-sm text-gray-800">Feb 05, 2027</p>
             <h3 class="text-2xl font-extrabold">Collecting 8 points for discount</h3>
             <p class="text-sm text-gray-800">
@@ -256,7 +256,7 @@
             <div><a href="#" class="font-bold">Learn More</a></div>
           </div>
           <div class="space-y-3 border border-gray-300 p-5 rounded-xl">
-            <img src="images/news-3.png" alt="news-1" />
+            <img class="w-full" src="images/news-3.png" alt="news-1" />
             <p class="text-sm text-gray-800">Feb 05, 2027</p>
             <h3 class="text-2xl font-extrabold">Collecting 8 points for discount</h3>
             <p class="text-sm text-gray-800">
@@ -267,5 +267,65 @@
         </div>
       </section>
     </main>
+    <!-- footer  -->
+    <footer class="bg-orange-100 text-gray-700 py-10 px-4 md:px-16">
+      <div class="w-3/4 mx-auto mt-16">
+        <!-- logo -->
+        <div class="flex justify-between items-center mb-16">
+          <div><img src="images/cup.png" alt="cup" /></div>
+          <div class="space-x-4">
+            <p class="hidden sm:inline-block">Ready to get strated?</p>
+            <button
+              class="py-2 px-4 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-md"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+        <!-- footer grid columns -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-16 text-sm">
+          <div class="flex flex-col gap-3">
+            <h4 class="font-bold text-lg">Quick Links</h4>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Insurance</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h4 class="font-bold text-lg">Our Service</h4>
+            <a href="#">Life Insurance</a>
+            <a href="#">Car Insurance</a>
+            <a href="#">Health Insurance</a>
+            <a href="#">House Insurance</a>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h4 class="font-bold text-lg">Help</h4>
+            <a href="#">FAQs</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="flex flex-col gap-8">
+            <h4 class="font-bold text-xl">Subscribe to our newsletter</h4>
+            <div>
+              <input
+                type="text"
+                placeholder="Email Address"
+                class="bg-transparent border-b-2 border-gray-500 w-9/12 outline-none"
+              />
+              <button>
+                <i
+                  class="fa-solid fa-angle-right bg-gradient-to-r from-orange-400 to-red-600 p-2 rounded-full text-white"
+                ></i>
+              </button>
+            </div>
+            <div class="text-2xl flex gap-5">
+              <i class="cursor-pointer fa-brands fa-facebook"></i>
+              <i class="cursor-pointer fa-brands fa-twitter"></i>
+              <i class="cursor-pointer fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="mt-16 text-xs text-center">© 2027 UIDesign.to - All rights reserved.</div>
+      </div>
+    </footer>
   </body>
 </html>
